@@ -39,16 +39,13 @@ echo $offset;
 	$unsigned_search_url = "http://api.yelp.com/v2/search?term=restaurants&category_filter=restaurants&location={$loc}%20New%20York&offset={$offset}";
 
 
-	// OAUTH keys
-	$consumer_key = "cly3yug4ZJislcMSL7z5Ig";
-	$consumer_secret = "TYtSHzO0GypmldpPuYhUANODJ1g";
-	$token = "mcT-A8YWEHF5djZvP-5tYIfO7p17stfv";
-	$token_secret = "5C_AOoRPX1VFwdDzmhwqJZBAWuE";
+	// OAUTH keys - populate
+	$consumer_key = "";
+	$consumer_secret = "";
+	$token = "";
+	$token_secret = "";
 
-	//$consumer_key = "FYn2U-z-yhtL433V33OdbQ";
-	//$consumer_secret = "DUky5ZAYrLCYoXi90MwS_KH2FGo";
-	//$token = "9d6sS44jQwHhGX11br_XQMm6fAELBQyQ";
-	//$token_secret = "p6EroQVsmSq46sn0EQ6sdeRbz5c";
+	
 
 	// Token object built using the OAuth library
 	$token = new OAuthToken($token, $token_secret);
